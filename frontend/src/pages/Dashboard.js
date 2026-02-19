@@ -13,7 +13,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   const today = new Date().toISOString().split('T')[0];
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const load = async () => {
     try {
       setLoading(true);
@@ -33,7 +33,7 @@ export default function Dashboard() {
     }
   };
 
-  useEffect(() => { load(); }, [load]); 
+  useEffect(() => { load(); }, []); // eslint-disable-line
 
   if (loading) return (
     <div className={styles.center}>
