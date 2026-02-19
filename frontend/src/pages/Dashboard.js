@@ -33,7 +33,7 @@ export default function Dashboard() {
     }
   };
 
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); }, [load]); 
 
   if (loading) return (
     <div className={styles.center}>
