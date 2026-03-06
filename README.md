@@ -161,3 +161,6 @@ hrms/
 - **Departments** — Predefined list on frontend; can be extended
 - **SQLite in dev** — SQLite is used locally for simplicity; PostgreSQL is used in production via `DATABASE_URL`
 - The free tier of Render may have cold start delays (~30s) on first request after inactivity
+         
+
+         
